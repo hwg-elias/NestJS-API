@@ -12,13 +12,13 @@ export class ArticleService {
         private readonly articleRepository: Repository<ArticleEntity>
     ) {}
     async createArticle(currentUser: UserEntity, createArticleDto: CreateArticleDto): Promise<ArticleEntity>{
-        const article = new ArticleEntity()
+        const article = new ArticleEntity() 
         Object.assign(article, createArticleDto)
         if (!article.tagList){
             article.tagList = []
         }
 
-        article.slug = 'foo';
+        article.slug = 'fooooooooooo';
 
         article.author = currentUser;
         

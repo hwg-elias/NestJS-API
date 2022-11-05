@@ -1,6 +1,7 @@
 import { BeforeInsert, Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { hash } from 'bcrypt';
 import { ArticleEntity } from "@app/article/article.entity";
+import { User } from "./decorators/user.decorator";
 
 @Entity({ name: 'users'})
 export class UserEntity {
@@ -28,5 +29,5 @@ export class UserEntity {
     }
 
     @OneToMany(() => ArticleEntity, (article) => article.author)
-    articles: ArticleEntity[]
+    articles: ArticleEntity[];
 }
