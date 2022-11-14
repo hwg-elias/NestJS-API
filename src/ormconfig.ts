@@ -16,5 +16,6 @@ export const config: PostgresConnectionOptions = {
 }
 const AppDataSource = new DataSource(config);
 
+AppDataSource.initialize();
 
 export default AppDataSource;
