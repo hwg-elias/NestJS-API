@@ -5,7 +5,7 @@ import { User } from "@app/user/decorators/user.decorator";
 import { CreateArticleDto } from "@app/article/dto/createArticle.dto";
 import { UserEntity } from "@app/user/user.entity";
 import { ArticleResponseInterface } from "./types/articleResponse.interface";
-import { ArticleEntity } from "./article.entity";
+
 
 @Controller('articles')
 export class ArticleController {
@@ -42,6 +42,20 @@ export class ArticleController {
     @UsePipes(new ValidationPipe())
     async updateArticle(@User('id') currentUserId: number, @Param('slug') slug: string, @Body('article') updateArticleDto: CreateArticleDto){
         const article = await this.articleService.updateArticle(slug, currentUserId, updateArticleDto)
+        return this.articleService.buildArticleResponse(article)
+    }
+
+    @Post(':slug/favorite')
+    @UseGuards(AuthGuard)
+    async addArticleToFavorites(@User('id') currentUserId: number, @Param('slug') slug: string): Promise<ArticleResponseInterface>{
+        const article = await this.articleService.addArticleFavorites(slug, currentUserId);
+        return this.articleService.buildArticleResponse(article)
+    }
+
+    @Delete(':slug/favorite')
+    @UseGuards(AuthGuard)
+    async deleteArticleFromFavorites(@User('id') currentUserId: number, @Param('slug') slug: string): Promise<ArticleResponseInterface>{
+        const article = await this.articleService.deleteArticleFromFavorites(slug, currentUserId)
         return this.articleService.buildArticleResponse(article)
     }
 }
