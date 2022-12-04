@@ -16,4 +16,6 @@
 <p>Using TypeORM to manage database, with an authentication system employing UseGuard and Validation decorators, the project has fetures of create and update profiles, create and update articles besides favorite an articles. It is possible to search for articles and sort it.</p>
   
 <h3>Routes</h3>
-<p>The routes to craate, check and others features it is <a target="_blank" href="insomnia/mediumclone-api-routes.json">here</a></p>
+<p>The user's routes allows to create and login an user, that don't need to authorize, however check for the current user and updating needs to. Follow and unfollow an user has to get the same authorization, to get some user is optional.</p>
+<p>Search for an article can easily be made for a logged out user, but log in can give it more ways to search.</p>
+<p>You can check the routes >><a target="_blank" href="insomnia/mediumclone-api-routes.json">here</a><<</p>
