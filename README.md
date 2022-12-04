@@ -19,3 +19,21 @@
 <p>The user's routes allows to create and login an user, that don't need to authorize, however check for the current user and updating needs to. Follow and unfollow an user has to get the same authorization, to get some user is optional.</p>
 <p>Search for an article can easily be made for a logged out user, but log in can give it more ways to search.</p>
 <p>You can check the routes >><a target="_blank" href="insomnia/mediumclone-api-routes.json">here</a><<</p>
+
+<h3>Aditional Dependencies</h3>
+    
+    $ npm install slugify
+
+    $ npm install pg
+
+    $ npm install bcrypt
+
+    $ npm install typeorm
+
+    $ npm install nodemon
+
+    $ npm install jsonwebtoken
+    
+<h3>Observation</h3>
+<p>Don't forget to user command <b>npm install</b> to install all the dependencies.</p>
+    
