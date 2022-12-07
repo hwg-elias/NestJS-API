@@ -3,7 +3,7 @@
 <h2 style="text-align:center;">Status: Finished <img style="width: 30px; text-align:center;" src="https://cdn-icons-png.flaticon.com/512/391/391175.png?w=740&t=st=1670186499~exp=1670187099~hmac=ca0fe32f8d625eab349ff161386cbc9ca5948d8b85d4a9f6ac728bbadd43ec71"/></h2>
 
 <h3>What is this project?</h3>
-<p>Based on a <a target="_blank" href="https://github.com/gothinkster/realworld">Real World</a> example app, this is a clone of <a target="_blank" href="https://medium.com">Medium</a> API.</p>
+<p>Based on a <a target="_blank" href="https://github.com/gothinkster/realworld">Real World</a> example app and with the teachings of Oleksandr Kocherhin on his course "NestJS - Building Real Project API From Scratch", this is a clone of <a target="_blank" href="https://medium.com">Medium</a> API.</p>
 
 <p>This project are made with: 
   <ul>
