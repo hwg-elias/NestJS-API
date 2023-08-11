@@ -35,9 +35,6 @@
 
     $ npm install jsonwebtoken
     
-<h3>Observation</h3>
-<p>Don't forget to user command <b>npm install</b> to install all the dependencies.</p>
-  <br>
 
 <h2 align='center'>Autor</h2>
 <div align='center'>
