@@ -24,9 +24,6 @@
     "db:seed": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js -d src/ormseeddatasource.ts migration:run"
   },
   "dependencies": {
-
-  
-    
     "bcrypt": "^5.1.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
